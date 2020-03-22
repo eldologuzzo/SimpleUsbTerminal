@@ -6,8 +6,8 @@ import android.content.DialogInterface;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.ListFragment;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -40,11 +40,7 @@ public class DevicesFragment extends ListFragment {
 
     private ArrayList<ListItem> listItems = new ArrayList<>();
     private ArrayAdapter<ListItem> listAdapter;
-
     private int baudRate = 19200;
-
-    public DevicesFragment() {
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
